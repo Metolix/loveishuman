@@ -14,6 +14,7 @@ export async function generateMetadata({
 }: {
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
+  const { slug } = await params;
   const a = getArticle(slug);
   if (!a) return {};
   return {
@@ -28,6 +29,7 @@ export default async function ArticlePage({
 }: {
   params: Promise<{ slug: string }>;
 }) {
+  const { slug } = await params;
   const a = getArticle(slug);
   if (!a) notFound();
   const related = allArticles

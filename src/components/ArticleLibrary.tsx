@@ -5,6 +5,8 @@ import ArticleCard from "./ArticleCard";
 import { allArticles, categories } from "@/lib/articles";
 
 export default function ArticleLibrary() {
+  const [query, setQuery] = useState("");
+
   const [category, setCategory] = useState("All topics");
   const visible = useMemo(
     () =>
