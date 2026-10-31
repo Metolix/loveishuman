@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   },
   description:
     "Clear guides to love, relationships, emotions and the questions that can be hard to ask.",
+  verification: {
+    google: "EtjAzoDoyLZ3ERNkoEakqbu2ouqjHC6GQLbgPzjsjpA",
+  },
   icons: { icon: "/icon.svg" },
   openGraph: {
     type: "website",
