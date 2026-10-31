@@ -5,7 +5,7 @@ export type Article = {
   read: number;
   description: string;
   intro: string;
-  sections: { heading: string; body: string }[];
+  sections: { heading: string; body: string; followUp?: string }[];
   sources: { title: string; url: string }[];
 };
 
@@ -43,14 +43,20 @@ const articles: Article[] = [
       {
         heading: "A feeling, and a way of relating",
         body: "Warmth and longing can be part of love. So can the less dramatic things: keeping a promise, listening when something is difficult, and respecting a no. How people treat each other over time tells you more than intensity alone.",
+        followUp:
+          "Feelings shift with stress, health, distance and time. That does not make them false. It does mean that a single intense moment is a poor measure of how safe or steady a relationship is. Look at patterns, including whether care goes both ways and whether you can speak honestly without fear.",
       },
       {
         heading: "Love has more than one shape",
         body: "Romantic love is only one form. Friendship, family ties, community and compassion can all offer belonging and meaning. A life without a romantic relationship is not a life without love.",
+        followUp:
+          "People also differ in how they express and experience closeness. Some value frequent contact; others feel connected while spending more time apart. It helps to ask what care looks like to the people involved instead of treating one style as the standard.",
       },
       {
         heading: "A useful question",
         body: "Rather than measuring how intense the feeling is, notice what happens between you. Can you disagree? Do you feel able to say no? Do you both make an effort after a hurt? Those details are often more useful than finding the perfect definition.",
+        followUp:
+          "You do not need to answer every question at once. If something feels wrong, name the specific moment and consider what would help: a conversation, a boundary, time to think, or support from someone you trust. Love can be meaningful while still needing limits.",
       },
     ],
     sources: [apa, nhs],
@@ -69,14 +75,20 @@ const articles: Article[] = [
       {
         heading: "Attraction draws attention",
         body: "Attraction can be physical, emotional, intellectual or a combination. It may spark curiosity and a wish to spend time together, but attraction alone cannot show whether your values, needs or expectations fit.",
+        followUp:
+          "You might enjoy someone's company and still discover that you want different things. That is not a failure of attraction. It is information you could only get by spending time together and being honest about what matters to you.",
       },
       {
         heading: "Infatuation fills in the blanks",
         body: "When you know little about someone, imagination can supply the missing pieces. You may focus on their best moments and picture what a future could be. That is common; it becomes more grounded as you learn how they act in ordinary situations.",
+        followUp:
+          "Try separating what you have observed from what you hope is true. For example, “They check in after we make plans” is an observation; “They will always know what I need” is a prediction. Both hopes and excitement are allowed, but they are not the same as knowing.",
       },
       {
         heading: "Love grows through knowledge",
         body: "There is no timetable for knowing someone. Pay attention to how they act when plans change, when you disagree, or when one of you needs space. You can care about a new connection without deciding what to call it yet.",
+        followUp:
+          "A slower pace can make room for curiosity instead of pressure. You can ask what the other person wants, share your own hopes, and let the answer develop over time. A label is useful when it helps both people understand their agreement, not when it is used to force certainty.",
       },
     ],
     sources: [apa, nhs],
@@ -94,14 +106,20 @@ const articles: Article[] = [
       {
         heading: "Closeness involves uncertainty",
         body: "Letting someone know you takes a degree of trust. You cannot fully control how another person responds, so tenderness may sit alongside fear or self-consciousness.",
+        followUp:
+          "That nervousness does not automatically mean the connection is unsafe. It can come from the ordinary risk of being seen, or from past experiences that make trust harder. Notice how the other person responds when you share something small; respect and patience matter more than a promise that you will never feel anxious.",
       },
       {
         heading: "Notice what the fear is asking for",
         body: "Try naming the concern plainly: Are you afraid of being judged, abandoned, or misunderstood? A specific fear is easier to talk about than a general sense that something is wrong.",
+        followUp:
+          "Then consider what is within your control. You might ask for clarification, take a pause, or decide that a subject is private for now. A partner can listen and offer reassurance, but neither person can remove all uncertainty from a relationship.",
       },
       {
         heading: "Move at a pace that feels mutual",
         body: "Vulnerability does not require sharing everything at once. Small, honest conversations can build trust. A caring person can respect a slower pace, and you can keep relationships and interests beyond one connection.",
+        followUp:
+          "If someone pushes past a boundary or uses private information to shame or threaten you, take that seriously. You are allowed to stop a conversation and seek outside support. Trust is built through repeated choices, not owed because one person has disclosed something personal.",
       },
     ],
     sources: [nhs, attachment],
@@ -120,14 +138,20 @@ const articles: Article[] = [
       {
         heading: "Intensity is not a diagnosis",
         body: "There is no threshold that makes a feeling unhealthy just because it is intense. Uncertainty, distance and change can make emotions louder. What matters is how you act and how the situation is affecting your life.",
+        followUp:
+          "Try not to use a label such as “too much” to punish yourself for caring. Instead, look for concrete signs of strain: are you neglecting sleep, responsibilities or friendships, or finding it hard to respect another person's choices? Those are useful reasons to pause and seek support, regardless of what you call the feeling.",
       },
       {
         heading: "Look at the effects",
         body: "Are you sleeping, working or studying, seeing friends, and making ordinary choices? Can each person say no? If these parts of life are shrinking, take that seriously.",
+        followUp:
+          "A simple check-in can make the pattern clearer. Think about what has changed over the past few weeks and whether the change feels chosen or driven by fear. You do not need to wait until a crisis to talk with a trusted person or professional.",
       },
       {
         heading: "Care can include space",
         body: "A relationship can matter deeply without becoming the only source of comfort or identity. Reconnecting with routines and trusted people is not a betrayal of love. If distress is persistent or overwhelming, a qualified professional can help you think it through.",
+        followUp:
+          "Making room for your own life can benefit both people. Time apart is not a test or a punishment; it is part of having separate needs and responsibilities. If either person feels pressured to give up friendships, privacy or independence, consider what boundary would restore a sense of choice.",
       },
     ],
     sources: [nhs, attachment],
@@ -146,14 +170,20 @@ const articles: Article[] = [
       {
         heading: "Let the answer be an answer",
         body: "A no, a lack of interest, or a request for distance should be respected. Repeated messages, pressure or grand gestures do not make mutuality more likely; they can make the other person feel unsafe.",
+        followUp:
+          "If the answer was unclear, one respectful request for clarity may be reasonable. After that, let the other person decide whether to respond. Do not use friends, new accounts or surprise visits to get around a boundary. Their choice deserves respect even while you are hurting.",
       },
       {
         heading: "Grieve what you hoped for",
         body: "You may be mourning a relationship that never began as well as the person. Give yourself room to feel disappointed without turning the rejection into a verdict on your worth.",
+        followUp:
+          "It can help to tell a friend what you are grieving: the person, the future you pictured, or the feeling of being chosen. Those losses can overlap. You do not have to convince yourself the connection meant nothing in order to accept that it was not mutual.",
       },
       {
         heading: "Make space for your own life",
         body: "Taking a break from reminders can help if contact keeps reopening the hurt. Talk with friends and return to routines that feel like yours. Missing the person again later does not mean you are back at the start.",
+        followUp:
+          "There is no single correct timeline for feeling better. Progress may look like having a more settled afternoon, then having a hard evening again. If the pain is making everyday life difficult for a sustained period, consider talking with a health professional.",
       },
     ],
     sources: [nhs, respect],
@@ -172,14 +202,20 @@ const articles: Article[] = [
       {
         heading: "The mind wants an explanation",
         body: "Uncertainty is uncomfortable, so people may replay conversations or look for the exact moment things changed. Reflection can help, but repeated analysis cannot always produce a satisfying answer.",
+        followUp:
+          "When you catch yourself rereading a chat, ask what you know for sure and what you are guessing. A delayed reply can have many explanations. If you need a response by a certain time, say so directly; otherwise, try stepping away from the phone and returning to something you had planned.",
       },
       {
         heading: "A no is about a relationship choice",
         body: "People say no for all kinds of reasons: attraction, timing, compatibility or simply because they do not want the same thing. You may never know which. Their answer does not predict what every future relationship will be like.",
+        followUp:
+          "Wanting a reason is understandable, but a detailed explanation is not always available or owed. You can accept the answer without agreeing with it or deciding that it describes your character. Give yourself time before trying to turn one rejection into a rule about future relationships.",
       },
       {
         heading: "Respond with care for yourself",
         body: "Try to speak to yourself as you would to a friend. Let trusted people support you, and respect the other person's boundaries. If the hurt begins to interfere with everyday life for a sustained period, consider reaching out for professional support.",
+        followUp:
+          "A small plan for the next day can help when everything feels personal: eat something, get some rest, and make one low-pressure connection with someone you trust. These steps will not erase the disappointment, but they can make it easier to carry while the feeling changes.",
       },
     ],
     sources: [nhs],
@@ -198,14 +234,20 @@ const articles: Article[] = [
       {
         heading: "Notice the trigger",
         body: "Did a change in plans, an unanswered message or a comparison bring the thought up? Identifying the moment can separate what happened from what you fear it means.",
+        followUp:
+          "Write down the event in one column and your interpretation in another. “They cancelled dinner” is observable; “they are tired of me” is one possible explanation. You can stay open to the feeling while checking whether the conclusion is supported.",
       },
       {
         heading: "Ask for clarity without demanding certainty",
         body: "You might say, “I felt unsettled when we didn’t talk today. Could we check in about what works for both of us?” A conversation can clear up what happened, even if it cannot answer every worry.",
+        followUp:
+          "Choose a time when neither of you is rushing or already upset. Make a specific request, then leave room for the other person's perspective. Reassurance can be kind, but a partner cannot promise that you will never feel doubt again.",
       },
       {
         heading: "Keep your self-worth wider than romance",
         body: "Maintain friendships, interests and goals that matter to you. A relationship can be important without becoming the only proof that you matter. If self-critical thoughts persist, support from a counsellor or clinician may be useful.",
+        followUp:
+          "Notice the parts of your life that remain yours: a skill you are learning, a friendship you value, or a responsibility you handle. These are not distractions from love. They give you a broader place to stand when insecurity gets loud.",
       },
     ],
     sources: [nhs, attachment],

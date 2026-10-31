@@ -80,6 +80,7 @@ export default async function ArticlePage({
               <section key={s.heading} id={`section-${i}`}>
                 <h2>{s.heading}</h2>
                 <p>{s.body}</p>
+                {s.followUp && <p>{s.followUp}</p>}
               </section>
             ))}
             <section className="sources-inline">
