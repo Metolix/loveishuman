@@ -18,7 +18,7 @@ export default function Home() {
         <div className="hero-copy">
           <p className="eyebrow">LOVE, RELATIONSHIPS &amp; FEELINGS</p>
           <h1>
-            Love is one of the most <em>human</em>
+            Love is <em>human</em>
           </h1>
 
           <p className="hero-lede">
