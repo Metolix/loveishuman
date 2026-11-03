@@ -5,11 +5,11 @@ import { Header, Footer } from "@/components/SiteShell";
 export const metadata: Metadata = {
   metadataBase: new URL("https://loveishuman.pages.dev"),
   title: {
-    default: "Love Is Human | Love, relationships and feelings",
+    default: "Love Is Human | Guides to love and relationships",
     template: "%s · Love Is Human",
   },
   description:
-    "Clear guides to love, relationships, emotions and the questions that can be hard to ask.",
+    "Thoughtful guides to love, relationships, feelings, boundaries and the questions that can be hard to ask.",
   verification: {
     google: "EtjAzoDoyLZ3ERNkoEakqbu2ouqjHC6GQLbgPzjsjpA",
   },
@@ -18,7 +18,8 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Love Is Human",
     title: "Love Is Human",
-    description: "Guides to love, relationships and the feelings around them.",
+    description:
+      "Thoughtful guides to love, relationships, feelings and human connection.",
   },
   alternates: { canonical: "/" },
   robots: { index: true, follow: true },

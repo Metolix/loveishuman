@@ -22,13 +22,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     ...pages.map((path) => ({
       url: `${base}/${path}`,
-      lastModified: new Date("2026-10-30"),
       changeFrequency: "monthly" as const,
       priority: path === "" ? 1 : 0.7,
     })),
     ...allArticles.map((a) => ({
       url: `${base}/articles/${a.slug}`,
-      lastModified: new Date("2026-10-30"),
       changeFrequency: "yearly" as const,
       priority: 0.6,
     })),

@@ -4,7 +4,8 @@ import ArticleLibrary from "@/components/ArticleLibrary";
 
 export const metadata: Metadata = {
   title: "Articles",
-  description: "Browse practical guides to love, emotions and relationships.",
+  description:
+    "Explore thoughtful guides to love, relationship boundaries, heartbreak, jealousy, communication and emotional wellbeing.",
 };
 
 export default function Articles() {

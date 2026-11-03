@@ -16,7 +16,7 @@ export default function Home() {
     <>
       <section className="hero wrap">
         <div className="hero-copy">
-          <p className="eyebrow"></p>
+          <p className="eyebrow">LOVE, RELATIONSHIPS &amp; FEELINGS</p>
           <h1>
             Love is one of the most <em>human</em>
           </h1>

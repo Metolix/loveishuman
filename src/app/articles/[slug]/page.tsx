@@ -37,6 +37,23 @@ export default async function ArticlePage({
     .slice(0, 2);
   return (
     <article className="article-page">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline: a.title,
+            description: a.description,
+            mainEntityOfPage: `https://loveishuman.pages.dev/articles/${a.slug}`,
+            publisher: {
+              "@type": "Organization",
+              name: "Love Is Human",
+              url: "https://loveishuman.pages.dev",
+            },
+          }).replace(/</g, "\\u003c"),
+        }}
+      />
       <div className="wrap">
         <Link className="back-link" href="/articles">
           <ArrowLeft size={15} /> All articles
